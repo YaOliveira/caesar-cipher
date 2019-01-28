@@ -1,4 +1,4 @@
-# Cifra de César
+﻿# Cifra de César
 
 ## Prefácio
 
@@ -218,3 +218,5 @@ projeto, tendo em conta o desenvolvimento de suas _habilidades socioemocionais_:
 
 * [ ] Permite usar um `offset` (_deslocamento_) negativo
 * [ ] Cifra/descifra _outros_ caracteres (espaços, pontuação, `ã`, `á`, ...)
+
+![Diagrama de blocos - Caesar Cipher](https://drive.google.com/open?id=1sBOiKBsPutKw87lWIuxqE2dyqStUowW1)
