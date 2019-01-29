@@ -1,9 +1,65 @@
-<style>
+body {
+    background-image:url("https://unsplash.it/1300/600?random"); 
+    background-size: 100vw 100vh;
+    background-attachment: fixed; /* Fixar a imagem */
+    margin: 0;
+    font-family: monospace;
+}
 
-body{
-    background-color: #F1F5F7;
-    background-image: url("https://unsplash.com/photos/GmN13w9bg8w");
-    padding: 15px 20px;
-    box-shadow: 0.5 0 2em gold;
+form{
+    width: 450px ; /* Tamanho do formulário */
+    margin : Auto ; /* Formulario centralizado */
+    background:rgba(0,0,0,0.6); /* Transparência no formulário */
+    padding: 10px 20px ; /*Afastamento da borda : 10 vertical 20 horizontal*/
+    box-sizing: border-box ; /*Borda do formulário, pode ser content-box ou border-box*/
+    margin-top: 25 px; 
+    border-radius: 20px ; /*tamanho do arredondamento nos cantos do formulario*/
+    font-size: 15px; 
+}
+
+h1{
     text-align: center;
+    margin : 0 ;
+    font-size: 25px; 
+    margin-bottom: 20px;
+    color: white
+}
+
+label{
+    text-align: left;
+    margin : 0 ;
+    font-size: 15px; 
+    margin-bottom: 20px;
+    color: white
+}
+
+input , textarea {
+    width: 100% ; /* Largura da área de texto 100%*/
+    margin-bottom: 10px;
+    padding: 3% ; /*Afastamento da borda*/ 
+    box-sizing: border-box ;
+    font-size: 15px; 
+    border: none;
+}
+
+.button {
+    background-color: #37794b; /*Cor do fundo do botão*/
+    color:black ; /*Texto do botão*/
+    padding: 10px; /* afastamento do texto em relação a borda do botão  */
+    margin: 10px 0px 10px 0px; /*superior direito inferior esquerdo*/
+    font-weight: bold;
+}
+
+#btnEncod, #btnDecod {
+    width: 48%;
+    font-size: 12px;
+
+}
+
+/*A regra @media é usada em consultas de mídia para aplicar 
+diferentes estilos a diferentes tipos / dispositivos de mídia.*/
+@media(max-width:480px){
+    form{
+        width: 100%;
+    }
 }
