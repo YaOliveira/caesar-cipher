@@ -16,17 +16,17 @@
     <br>
     <h1>Projeto 1 - Caesar Cipher </h1>
     <label>Selecione o número do deslocamento:</label>
-    <input type="number" id="displacement" placeholder="N° de posições">
+    <input type="number" id="displacement" placeholder="N° de posições"/>
     <!-- Área para escrever a mensagem -->
     <textarea id="writePhrase" placeholder="Escreva o texto / mensagem" ></textarea>
-    <input onclick="btnEncod()" type="submit" id="botaoEncod" value= "CODIFICAR" />
-    <input onclick="btnDecod()" type="submit" id="botaoDecod" value= "DECODIFICAR" />
+    <input onclick="btnEncod()" type="text" id="botaoEncod" value= "CODIFICAR" />
+    <input onclick="btnDecod()" type="text" id="botaoDecod" value= "DECODIFICAR" />
     <!-- Área para mostrar a mensagem -->
     <label>Recebe a mensagem</label>
     <textarea id="textResult"  placeholder="Resultado" ></textarea>
     <!-- Botão para limpar / recomeçar -->
-    <!--<input type="reset" value="LIMPAR" id="btnClean" class="button">
-    -->
+    <input type="reset" value = "LIMPAR" id="botaoClean" class="button"/>
+    
     </form>
 <script src="cipher.js"></script>
 <script src="tests.js"></script>

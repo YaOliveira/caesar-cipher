@@ -18,6 +18,7 @@ function btnEncod(){
     let offset = document.getElementById("displacement").value;
     let result = cipher.encode(offset,writtensentence);
   document.getElementById("textResult").innerHTML = result;
+  
         console.log(btnEncod);
         console.log(writtensentence);
         console.log(offset);
@@ -61,27 +62,8 @@ cipher.encode = (offset,string) => {
         console.log("passou pela concatenação");
     }
   }
+  console.log(resultEncode);
   return resultEncode;
   
+  
 }
-
-
-
-//(variavelDaFrase.charcodeAt(i) - 65 + desloc) %26 - 65)
-
-/* --- explicação da vanessa em 29/01
-
-cipher = (offset,string) => {
-
-
-  string.charcode(i)
-
-  for (let i = 0; i < writtensentence.length; i++){
-    (string.charcodeAt(i) - 65 + offset)%26 - 65);
-
-  } if {
-    (string.charcodeAt(i) - 97 + offset)%26 - 97);
-
-  }
-*/
- 

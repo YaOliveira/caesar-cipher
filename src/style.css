@@ -45,7 +45,7 @@ input , textarea {
 }
 
 .button {
-    background-color: #37794b; /*Cor do fundo do botão*/
+    background-color: #4d3085; /*Cor do fundo do botão*/
     color:black ; /*Texto do botão*/
     padding: 10px; /* afastamento do texto em relação a borda do botão  */
     margin: 10px 0px 10px 0px; /*superior direito inferior esquerdo*/
@@ -55,13 +55,23 @@ input , textarea {
 #botaoEncod, #botaoDecod {
     width: 48%;
     font-size: 12px;
-
+    font-weight: bold;
+    background-color: #a69cbb;
+    text-align: center;
+}
+#botaoEncod:hover, #botaoDecod:hover {
+    width: 48%;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #c7db15;
+    text-align: center;
 }
 
 ::placeholder{
     font-family: 'Cousine', monospace;
 
 }
+
 
 @import url('https://fonts.googleapis.com/css?family=Cousine'); /*fonte do google fonts */
 
