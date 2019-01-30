@@ -8,26 +8,28 @@
 
   <title>Caesar Cipher</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Cousine" rel="stylesheet">
 </head>
 
 <body>
   <form name="form">
     <br>
-    <h1>Sprint 1 - Caesar Cipher </h1>
-    <label>Selecione o número do deslocamento</label>
-    <input type="number" id="deslocamento" placeholder="N° de posições">
+    <h1>Projeto 1 - Caesar Cipher </h1>
+    <label>Selecione o número do deslocamento:</label>
+    <input type="number" id="displacement" placeholder="N° de posições">
     <!-- Área para escrever a mensagem -->
     <textarea id="writePhrase" placeholder="Escreva o texto / mensagem" ></textarea>
     <input type="button" id="btnEncod" value= "CODIFICAR" />
     <input type="button" id="btnDecod" value= "DECODIFICAR" />
     <!-- Área para mostrar a mensagem -->
     <label>Recebe a mensagem</label>
-    <textarea id="TxtResult"  placeholder="Resultado" readonly ></textarea>
+    <textarea id="textResult"  placeholder="Resultado" readonly ></textarea>
     <!-- Botão para limpar / recomeçar -->
     <input type="button" value="LIMPAR" id="btnClean" class="boton">
 </form>
 <script src="cipher.js"></script>
 <script src="index.js"></script>
+<script src="tests.js"></script>
 </body>
 
 </html>
