@@ -52,7 +52,7 @@ input , textarea {
     font-weight: bold;
 }
 
-#btnEncod, #btnDecod {
+#botaoEncod, #botaoDecod {
     width: 48%;
     font-size: 12px;
 

@@ -19,16 +19,16 @@
     <input type="number" id="displacement" placeholder="N° de posições">
     <!-- Área para escrever a mensagem -->
     <textarea id="writePhrase" placeholder="Escreva o texto / mensagem" ></textarea>
-    <input type="button" id="btnEncod" value= "CODIFICAR" />
-    <input type="button" id="btnDecod" value= "DECODIFICAR" />
+    <input onclick="btnEncod()" type="submit" id="botaoEncod" value= "CODIFICAR" />
+    <input onclick="btnDecod()" type="submit" id="botaoDecod" value= "DECODIFICAR" />
     <!-- Área para mostrar a mensagem -->
     <label>Recebe a mensagem</label>
-    <textarea id="textResult"  placeholder="Resultado" readonly ></textarea>
+    <textarea id="textResult"  placeholder="Resultado" ></textarea>
     <!-- Botão para limpar / recomeçar -->
-    <input type="button" value="LIMPAR" id="btnClean" class="boton">
-</form>
+    <!--<input type="reset" value="LIMPAR" id="btnClean" class="button">
+    -->
+    </form>
 <script src="cipher.js"></script>
-<script src="index.js"></script>
 <script src="tests.js"></script>
 </body>
 
