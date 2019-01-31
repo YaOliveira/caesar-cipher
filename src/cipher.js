@@ -1,95 +1,123 @@
-window.cipher = {
+// window.cipher = {
   
  
-  // ... 
-};
+//   // ... 
+// };
+
 
 console.log ("Passo 1 code")
     let cipher ={};
 
 function btnEncod(){
-    let writtensentence = document.getElementById("writePhrase").value;
-    let offset = document.getElementById("displacement").value;
-    let result = cipher.encode(offset,writtensentence);
-  document.getElementById("textResult").innerHTML = result;
+  let writtensentence = document.getElementById("writePhrase").value;
+  let offset = document.getElementById("displacement").value;
+  console.log(writtensentence);
+  console.log(offset)
+  if (offset < 0){
+    while (offset < 0) {
+      offset = offset + 26
+      return cipher.encode(offset,writtensentence);
+      console.log("wi")
+    } 
+  } else {
+    return cipher.encode(offset,writtensentence);
+  }
+  
+  // let result = cipher.encode(offset,writtensentence);
+  // console.log(result);
+  // document.getElementById("textResult").innerHTML = result;
 }
 
 console.log("Passo 2 code")
 cipher.encode = (offset,string) => {
-       let resultEncode ="";
-      
+  let resultEncode ="";
+       
 // tranforma letra em asc
   for (let i = 0; i < string.length; i++) {
-       let codAscii = string.charCodeAt(i);
-
-       if (offset < 0) {
-        offset += 26
-        console.log(offset + "code não está ok")
-      }
-       
+       let codAscii = string.charCodeAt(i); 
+     
+  
     if (codAscii >= 65 && codAscii <= 90) {
       console.log("passou pela letra maiúscula");
-      let result = ((codAscii - 65 + parseInt(offset)) % 26) + 65;
+      let result = ((codAscii - 65 + parseInt(offset))% 26 +26)%26 + 65;
       let resultLetterTransform = String.fromCharCode(result);
       resultEncode = resultEncode + resultLetterTransform;
          
     } else if (codAscii >= 97 && codAscii <= 122) {
 
-      let result = ((codAscii - 97 + parseInt(offset)) % 26) + 97;
+      let result = ((codAscii - 97 + parseInt(offset))% 26 +26) %26 + 97;
       let resultLetterTransform = String.fromCharCode(result);
       resultEncode = resultEncode + resultLetterTransform;
     
     } else {
       resultEncode = resultEncode + string[i];
     }
+   
   }
+  console.log("legal", resultEncode)
 
-  return resultEncode;
+  return document.getElementById("textResult").innerHTML = resultEncode;
 }
 
-console.log ("Passo 1 DEC")
-let xcipher ={};
+
+/* ----PASSO DECODE ---*/
+
+
+console.log ("Passo 1 DECO")
+    let xcipher ={};
 
 function btnDecod(){
-        
-    let writtensentence = document.getElementById("writePhrase").value;
-    let offset = document.getElementById("displacement").value;
-    let result = xcipher.decode(offset,writtensentence);
-         document.getElementById("textResult").innerHTML = result;
+  let writtensentence = document.getElementById("writePhrase").value;
+  let offset = document.getElementById("displacement").value;
+  console.log(writtensentence);
+  console.log(offset)
+  if (offset < 0){
+    while (offset < 0) {
+      offset = offset + 26
+      return xcipher.decode(offset,writtensentence);
+      console.log("wi")
+    } 
+  } else {
+    return xcipher.decode(offset,writtensentence);
+  }
   
+  // let result = cipher.encode(offset,writtensentence);
+  // console.log(result);
+  // document.getElementById("textResult").innerHTML = result;
 }
 
-console.log("Passo 11 DEC")
+console.log("Passo 2 DECO")
 xcipher.decode = (offset,string) => {
-       let resultDecode ="";
+  let resultDecode ="";
+       
 // tranforma letra em asc
   for (let i = 0; i < string.length; i++) {
        let codAscii = string.charCodeAt(i);
-
-       if (offset < 0) {
-        offset -=26
-      }
-      console.log (offset + "decode não está ok")
-       
+     
+  
     if (codAscii >= 65 && codAscii <= 90) {
       console.log("passou pela letra maiúscula");
-      let result = ((codAscii - 90 - parseInt(offset %26)) %26) + 90;
+      let result = ((codAscii - 65 - parseInt(offset))%26 +26) %26 + 65;
+      console.log(codAscii + "antes")
+      console.log(offset +"antes")
       let resultLetterTransform = String.fromCharCode(result);
+      console.log(codAscii + "depois")
+      console.log(offset +"depois")
       resultDecode = resultDecode + resultLetterTransform;
+         
     } else if (codAscii >= 97 && codAscii <= 122) {
 
-      let result = ((codAscii - 122 - parseInt(offset %26)) % 26) + 122;
+      let result = ((codAscii - 97 - parseInt(offset))%26 +26) %26 + 97;
+
       let resultLetterTransform = String.fromCharCode(result);
       resultDecode = resultDecode + resultLetterTransform;
     
-        console.log("passou pela letra minúscula");
     } else {
       resultDecode = resultDecode + string[i];
-        console.log(string);
-        console.log(resultDecode);
-        console.log("passou pela concatenação");
     }
+   
   }
-  console.log(resultDecode);
-  return resultDecode;
+  console.log("legal dec", resultDecode)
+
+  return document.getElementById("textResult").innerHTML = resultDecode;
 }
