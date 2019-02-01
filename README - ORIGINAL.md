@@ -201,17 +201,17 @@ projeto, tendo em conta o desenvolvimento de suas _habilidades socioemocionais_:
 ### Parte Obrigatória
 
 * [ ] `README.md` com explicações e desenho do projeto
-* [ ] Usar VanillaJS.
-* [ ] Permitir escrever um texto, com letras maiúsculas e minúsculas, para ser
+* [x] Usar VanillaJS.
+* [x] Permitir escrever um texto, com letras maiúsculas e minúsculas, para ser
   cifrado.
-* [ ] Mostrar o resultado da cifra corretamente.
-* [ ] Permitir escrever um texto, com letras maiúsculas e minúsculas, para ser
+* [x] Mostrar o resultado da cifra corretamente.
+* [x] Permitir escrever um texto, com letras maiúsculas e minúsculas, para ser
   descifrado.
-* [ ] Mostrar o resultado descifrado corretamente.
-* [ ] Permitir escolher o `offset` (_deslocamento_) a ser usado na
+* [x] Mostrar o resultado descifrado corretamente.
+* [x] Permitir escolher o `offset` (_deslocamento_) a ser usado na
   cifragem/descifragem.
-* [ ] Implementa `cipher.encode`.
-* [ ] Implementa `cipher.decode`.
+* [x] Implementa `cipher.encode`.
+* [x] Implementa `cipher.decode`.
 * [ ] Criar testes unitários.
 
 ### Parte Opcional: "Hacker edition"
