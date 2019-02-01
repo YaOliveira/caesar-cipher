@@ -1,14 +1,14 @@
-/*let resultEncode = cipher("aBc",1);
-if(resultEncode === "bCd"){
-        console.log ("Deu certo");
+let resultCipherEncode = encode(1, "Yara Zaza Pão Zuzu WxyzAbcde");
+if(resultCipherEncode === "Zbsb Abab Qãp Avav XyzaBcdef"){
+        console.log ("Deu certo resultCipherEncode");
 }else{
-        console.log("Deu errado");
+        console.log("Deu errado resultCipherEncode");
 }
-*/
 
-/* Tests
-let resultEncode= 'veni, vidi, vici';
-for (let i = 0; i<26; i++) {
-  console.log(i+': '+cipher(string,i));
+let resultadoxCipherDecode = decode(1,"Yara Zaza Pão Zuzu WxyzAbcde");
+if(resultadoxCipherDecode === "Xzqz Yzyz Oãn Ytyt VwxyZabcd"){
+        console.log ("Deu certo resultadoxCipherDecode");
+}else{
+        console.log("Deu errado resultadoxCipherDecode");
 }
-*/
+

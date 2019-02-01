@@ -1,6 +1,3 @@
-console.log ("Passo 1 code")
-let cipher ={};
-
 function btnEncod(){
   let writtensentence = document.getElementById("writePhrase").value;
   let offset = document.getElementById("displacement").value;
@@ -8,31 +5,29 @@ function btnEncod(){
     if (offset < 0){
       while (offset < 0) {
         offset = offset - 26
-        return cipher.encode(offset,writtensentence);
+        return encode(offset,writtensentence);
       } 
     } else {
-      return cipher.encode(offset,writtensentence);
+      return encode(offset,writtensentence);
   }
 }
 
-console.log("Passo 2 code")
-cipher.encode = (offset,string) => {
+function encode (offset,string) {
   let resultEncode ="";
        
 // tranforma letra em asc
   for (let i = 0; i < string.length; i++) {
        let codAscii = string.charCodeAt(i); 
      
-  
     if (codAscii >= 65 && codAscii <= 90) {
-      console.log("passou pela letra maiúscula");
+
       let result = ((codAscii - 65 + parseInt(offset))% 26 +26)%26 + 65;
       let resultLetterTransform = String.fromCharCode(result);
       resultEncode = resultEncode + resultLetterTransform;
          
     } else if (codAscii >= 97 && codAscii <= 122) {
 
-      let result = ((codAscii - 97 + parseInt(offset))% 26 +26) %26 + 97;
+      let result = ((codAscii - 97 + parseInt(offset))% 26 +26)%26 + 97;
       let resultLetterTransform = String.fromCharCode(result);
       resultEncode = resultEncode + resultLetterTransform;
     
@@ -41,15 +36,12 @@ cipher.encode = (offset,string) => {
     }
    
   }
-  console.log("legal", resultEncode)
 
   return document.getElementById("textResult").innerHTML = resultEncode;
 }
 
 /* ----PASSO DECODE ---*/
 
-console.log ("Passo 1 DECO")
-let xcipher ={};
 
 function btnDecod(){
   let writtensentence = document.getElementById("writePhrase").value;
@@ -59,16 +51,15 @@ function btnDecod(){
   if (offset < 0){
     while (offset < 0) {
       offset = offset - 26
-      return xcipher.decode(offset,writtensentence);
+      return decode(offset,writtensentence);
       
     } 
   } else {
-      return xcipher.decode(offset,writtensentence);
+      return decode(offset,writtensentence);
   }
 }
 
-console.log("Passo 2 DECO")
-xcipher.decode = (offset,string) => {
+function decode(offset,string) {
   let resultDecode ="";
        
 // tranforma letra em asc
@@ -96,7 +87,7 @@ xcipher.decode = (offset,string) => {
   return document.getElementById("textResult").innerHTML = resultDecode;
 }
 
-
+// apagar dados da text area, quando clicar no input tipo reset
 let btnClean = document.querySelector('#botaoClean');
 
 function cleanText(){
@@ -106,5 +97,3 @@ function cleanText(){
 btnClean.addEventListener('click', function(){
   cleanText();
 });
-
-
