@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <form name="form">
+  <form name="form" id="formcipher">
     <br>
     <h1>Projeto 1 - Caesar Cipher </h1>
     <label>Selecione o número do deslocamento:</label>
@@ -23,10 +23,11 @@
     <input onclick="btnDecod()" type="text" id="botaoDecod" value= "DECODIFICAR" />
     <!-- Área para mostrar a mensagem -->
     <label>Recebe a mensagem</label>
-    <textarea id="textResult"  placeholder="Resultado" ></textarea>
+    <textarea id="textResult" placeholder="Resultado" ></textarea>
     <div>
     <!-- Botão para limpar / recomeçar -->
-    <input type="reset" value = "LIMPAR" id="botaoClean" class="button"/>
+    <!-- <input onclick="btnClean()" type="reset" value = "LIMPAR" id="botaoClean" class="button"/>-->
+    <input type="reset" value ="limpar" id="botaoClean" class="button"/>
     </div>
     </form>
 <script src="cipher.js"></script>
