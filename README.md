@@ -17,7 +17,7 @@ No primeiro sprint foi utilizado o **kanban** e no segundo sprint foi utilizado 
 
 
 ## O usuário
-Definição do usuário:
+O desenvolvimento deste projeto foi pensado no usuário com o objetivo de ser intuitivo e que atendesse a necessidade dele que é codificar e descodificar mensagens utilizando o deslocamento.
 
 ## Diagrama de Blocos
 
