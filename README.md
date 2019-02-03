@@ -13,6 +13,9 @@ Também era objetivo deste projeto, ser implementado inteiramente em ES6, porém
 
 No primeiro sprint foi utilizado o **kanban** e no segundo sprint foi utilizado a ferramenta **Trello**. Em ambas situações, dividi o projeto em mini partes e as mesmas foram priorizadas utilizando dois critérios: o que era necessário para formar o _esqueleto_ do site e o que eu como desenvolvedora tinha mais facilidade em desenvolver, deixando o que demandaria mais tempo de aprendizagem e de desenvolvimento por último. Todos os itens tinham data definida / prevista para término.
 
+![Trello do Projeto 1 - Caesar Cipher](https://github.com/YaOliveira/caesar-cipher/blob/master/Trello%20-%20Projeto%20Caesar%20Cipher.png)
+
+
 ## O usuário
 Definição do usuário:
 
@@ -21,7 +24,7 @@ Definição do usuário:
 ![Diagrama de blocos - Caesar Cipher](https://github.com/YaOliveira/caesar-cipher/blob/master/Diagrama_Caesar_Cipher.png)
 
 ## Conheça o site / projeto
-![VISÃO DO SITE](https://github.com/YaOliveira/caesar-cipher/blob/master/LAYOUT.png)
+![VISÃO DO SITE](https://github.com/YaOliveira/caesar-cipher/blob/master/Layout%20Caesar%20Cipher.png)
 
 ### Parte Opcional: "Hacker edition"
 
@@ -29,7 +32,7 @@ O projeto extra foi implementado com sucesso. Nesse projeto, os acentos e espaç
 
 ### Parte Obrigatória
 
-* [ ] `README.md` com explicações e desenho do projeto
+* [x] `README.md` com explicações e desenho do projeto
 * [x] Usar VanillaJS.
 * [x] Permitir escrever um texto, com letras maiúsculas e minúsculas, para ser
   cifrado.
@@ -41,7 +44,7 @@ O projeto extra foi implementado com sucesso. Nesse projeto, os acentos e espaç
   cifragem/descifragem.
 * [x] Implementa `cipher.encode`.
 * [x] Implementa `cipher.decode`.
-* [ ] Criar testes unitários.
+* [x] Criar testes unitários.
 
 ### Parte Opcional: "Hacker edition"
 
