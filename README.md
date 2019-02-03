@@ -21,7 +21,7 @@ Definição do usuário:
 ![Diagrama de blocos - Caesar Cipher](https://github.com/YaOliveira/caesar-cipher/blob/master/Diagrama_Caesar_Cipher.png)
 
 ## Conheça o site / projeto
-Inserir site estático
+![VISÃO DO SITE](../Diagrama_Caesar_Cipher.png)
 
 ### Parte Opcional: "Hacker edition"
 
