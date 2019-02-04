@@ -48,8 +48,7 @@ function encode (offset,string) {
 function btnDecod(){
   let writtensentence = document.getElementById("writePhrase").value;
   let offset = document.getElementById("displacement").value;
-  console.log(writtensentence);
-  console.log(offset)
+
   if (offset < 0){
     while (offset < 0) {
       offset = offset - 26
