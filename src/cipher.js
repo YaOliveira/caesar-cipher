@@ -14,6 +14,7 @@ function btnEncod(){
   }
 }
 
+
 function encode (offset,string) {
   let resultEncode ="";
        
@@ -59,6 +60,7 @@ function btnDecod(){
       return decode(offset,writtensentence);
   }
 }
+
 
 function decode(offset,string) {
   let resultDecode ="";
