@@ -1,3 +1,5 @@
+/* ----PROCESSO DE CODIFICAÇÃO ---*/
+
 function btnEncod(){
   let writtensentence = document.getElementById("writePhrase").value;
   let offset = document.getElementById("displacement").value;
@@ -15,13 +17,13 @@ function btnEncod(){
 function encode (offset,string) {
   let resultEncode ="";
        
-// tranforma letra em asc
+// Transforma a letra em ASC
   for (let i = 0; i < string.length; i++) {
        let codAscii = string.charCodeAt(i); 
      
     if (codAscii >= 65 && codAscii <= 90) {
 
-      let result = ((codAscii - 65 + parseInt(offset))% 26 +26)%26 + 65;
+      let result = ((codAscii - 65 + (offset))% 26 +26)%26 + 65;
       let resultLetterTransform = String.fromCharCode(result);
       resultEncode = resultEncode + resultLetterTransform;
          
@@ -40,7 +42,7 @@ function encode (offset,string) {
   return document.getElementById("textResult").innerHTML = resultEncode;
 }
 
-/* ----PASSO DECODE ---*/
+/* ----PROCESSO DE DECODIFICAÇÃO ---*/
 
 
 function btnDecod(){
@@ -62,7 +64,7 @@ function btnDecod(){
 function decode(offset,string) {
   let resultDecode ="";
        
-// tranforma letra em asc
+// Transforma a letra em ASC
   for (let i = 0; i < string.length; i++) {
        let codAscii = string.charCodeAt(i);
      
@@ -87,7 +89,8 @@ function decode(offset,string) {
   return document.getElementById("textResult").innerHTML = resultDecode;
 }
 
-// apagar dados da text area, quando clicar no input tipo reset
+/* ----PROCESSO PARA APAGAR DADOS DA TEXTAREA ---*/
+
 let btnClean = document.querySelector('#botaoClean');
 
 function cleanText(){
@@ -97,3 +100,4 @@ function cleanText(){
 btnClean.addEventListener('click', function(){
   cleanText();
 });
+

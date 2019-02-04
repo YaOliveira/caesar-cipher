@@ -15,6 +15,7 @@
   <form name="form" id="formcipher">
     <br>
     <h1>Projeto 1 - Caesar Cipher </h1>
+    <h4>"Para criptografar ou descriptografar sua mensagem"</h4>
     <label>Selecione o número do deslocamento:</label>
     <input type="number" id="displacement" placeholder="N° de posições"/>
     <!-- Área para escrever a mensagem -->
@@ -22,14 +23,11 @@
     <input onclick="btnEncod()" type="text" id="botaoEncod" value= "CODIFICAR" />
     <input onclick="btnDecod()" type="text" id="botaoDecod" value= "DECODIFICAR" />
     <!-- Área para mostrar a mensagem -->
-    <label>Recebe a mensagem</label>
-    <textarea id="textResult" placeholder="Resultado" ></textarea>
-    <div>
+    <label>Resultado da mensagem processada:</label>
+    <textarea id="textResult" placeholder="Resultado" autocomplete="off" ></textarea>
     <!-- Botão para limpar / recomeçar -->
-    <!-- <input onclick="btnClean()" type="reset" value = "LIMPAR" id="botaoClean" class="button"/>-->
     <input type="reset" value ="LIMPAR" id="botaoClean" class="button"/>
-    </div>
-    </form>
+  </form>
 <script src="cipher.js"></script>
 <script src="tests.js"></script>
 </body>

@@ -26,6 +26,16 @@ h1{
     color: white
     
 }
+h4{
+    text-align: center;
+    margin : 0 ;
+    font-size: 15px;
+    font-family: 'Cousine', monospace; 
+    margin-bottom: 20px;
+    color: white
+    
+
+}
 
 label{
     text-align: left;
