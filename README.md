@@ -1,6 +1,6 @@
 ﻿# Cifra de César
 
-Primeiro projeto desenvolvido para o curso de Desenvolvedora Front-End para o Bootcamp
+Primeiro projeto desenvolvido para o curso de Desenvolvedora Front-End no Bootcamp
 **Laboratória** - campus SP - Brasil.
 
 ## O Projeto
@@ -17,7 +17,7 @@ No primeiro sprint foi utilizado o **kanban** e no segundo sprint foi utilizado 
 
 
 ## O usuário
-O desenvolvimento deste projeto foi pensado no usuário com o objetivo de ser intuitivo e que atendesse a necessidade dele que é codificar e descodificar mensagens utilizando o deslocamento.
+O desenvolvimento deste projeto foi pensado no usuário com o objetivo de ser intuitivo e que atendesse a necessidade dele que é codificar e descodificar mensagens utilizando o deslocamento(offset) fornecido pelo mesmo.
 
 ## Diagrama de Blocos
 
