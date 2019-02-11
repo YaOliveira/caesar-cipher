@@ -7,10 +7,10 @@ function btnEncod(){
     if (offset < 0){
       while (offset < 0) {
         offset = offset - 26
-        return encode(offset,writtensentence);
+        return document.getElementById("textResult").innerHTML = encode(offset,writtensentence);
       } 
     } else {
-      return encode(offset,writtensentence);
+      return document.getElementById("textResult").innerHTML = encode(offset,writtensentence);
   }
 }
 
@@ -24,7 +24,7 @@ function encode (offset,string) {
      
     if (codAscii >= 65 && codAscii <= 90) {
 
-      let result = ((codAscii - 65 + (offset))% 26 +26)%26 + 65;
+      let result = ((codAscii - 65 + parseInt(offset))% 26 +26)%26 + 65;
       let resultLetterTransform = String.fromCharCode(result);
       resultEncode = resultEncode + resultLetterTransform;
          
@@ -40,7 +40,7 @@ function encode (offset,string) {
    
   }
 
-  return document.getElementById("textResult").innerHTML = resultEncode;
+  return  resultEncode;
 }
 
 /* ----PROCESSO DE DECODIFICAÇÃO ---*/
@@ -53,11 +53,11 @@ function btnDecod(){
   if (offset < 0){
     while (offset < 0) {
       offset = offset - 26
-      return decode(offset,writtensentence);
+      return document.getElementById("textResult").innerHTML = decode(offset,writtensentence);
       
     } 
   } else {
-      return decode(offset,writtensentence);
+      return document.getElementById("textResult").innerHTML = decode(offset,writtensentence);
   }
 }
 
@@ -87,7 +87,7 @@ function decode(offset,string) {
     }
    
   }
-  return document.getElementById("textResult").innerHTML = resultDecode;
+  return resultDecode;
 }
 
 /* ----PROCESSO PARA APAGAR DADOS DA TEXTAREA ---*/
@@ -101,4 +101,3 @@ function cleanText(){
 btnClean.addEventListener('click', function(){
   cleanText();
 });
-

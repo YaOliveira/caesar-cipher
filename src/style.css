@@ -45,7 +45,7 @@ label{
     color: white
 }
 
-input , textarea {
+input, textarea {
     width: 100% ; /* Largura da área de texto 100%*/
     margin-bottom: 10px;
     padding: 3% ; /*Afastamento da borda*/ 

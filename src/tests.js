@@ -1,4 +1,6 @@
 
+
+
 //TESTE DA CODIFICAÇÃO
 let resultEncodeAll = encode(1, "Yara Zaza Pão Zuzu WxyzAbcde");
 if(resultEncodeAll === "Zbsb Abab Qãp Avav XyzaBcdef"){
@@ -47,3 +49,7 @@ if(resultDecodeAlphNeg === "ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxy
 }else{
         console.log("Teste reprovado de decodificação do alfabeto com -2 de offset");
 };
+// function(clean) {
+//         document.getElementById("textResult").innerHTML = "";
+// }
+// return clean();
