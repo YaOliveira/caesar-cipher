@@ -1,24 +1,35 @@
-/* ----PROCESSO DE CODIFICAÇÃO ---*/
+const encodeInput = document.getElementById("btn-encode");
+const decodeInput = document.getElementById("btn-decode");
+const btnClean = document.querySelector('#btn-clean');
 
-function btnEncod(){
-  let writtensentence = document.getElementById("writePhrase").value;
+encodeInput.addEventListener('click', function(){
+  btnEncode(encode);
+});
+
+decodeInput.addEventListener('click', function(){
+  btnEncode(decode);
+});
+
+function btnEncode(func){
+  let writtenSentence = document.getElementById("write-phrase").value;
   let offset = document.getElementById("displacement").value;
   
     if (offset < 0){
       while (offset < 0) {
         offset = offset - 26
-        return document.getElementById("textResult").innerHTML = encode(offset,writtensentence);
+        return document.getElementById("text-result").innerHTML = func(offset,writtenSentence);
       } 
     } else {
-      return document.getElementById("textResult").innerHTML = encode(offset,writtensentence);
+      return document.getElementById("text-result").innerHTML = func(offset,writtenSentence);
   }
 }
+
 
 
 function encode (offset,string) {
   let resultEncode ="";
        
-// Transforma a letra em ASC
+
   for (let i = 0; i < string.length; i++) {
        let codAscii = string.charCodeAt(i); 
      
@@ -37,35 +48,16 @@ function encode (offset,string) {
     } else {
       resultEncode = resultEncode + string[i];
     }
-   
   }
-
   return  resultEncode;
 }
 
-/* ----PROCESSO DE DECODIFICAÇÃO ---*/
-
-
-function btnDecod(){
-  let writtensentence = document.getElementById("writePhrase").value;
-  let offset = document.getElementById("displacement").value;
-
-  if (offset < 0){
-    while (offset < 0) {
-      offset = offset - 26
-      return document.getElementById("textResult").innerHTML = decode(offset,writtensentence);
-      
-    } 
-  } else {
-      return document.getElementById("textResult").innerHTML = decode(offset,writtensentence);
-  }
-}
 
 
 function decode(offset,string) {
   let resultDecode ="";
        
-// Transforma a letra em ASC
+
   for (let i = 0; i < string.length; i++) {
        let codAscii = string.charCodeAt(i);
      
@@ -90,14 +82,10 @@ function decode(offset,string) {
   return resultDecode;
 }
 
-/* ----PROCESSO PARA APAGAR DADOS DA TEXTAREA ---*/
-
-let btnClean = document.querySelector('#botaoClean');
-
-function cleanText(){
-  document.querySelector('#textResult').innerHTML = "";
-}
-
 btnClean.addEventListener('click', function(){
   cleanText();
 });
+
+function cleanText(){
+  document.querySelector('#text-result').innerHTML = "";
+}

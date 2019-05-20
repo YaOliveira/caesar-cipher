@@ -1,35 +1,27 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
-  <!-- Linha de código responsivo -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Caesar Cipher</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css?family=Cousine" rel="stylesheet">
 </head>
-
 <body>
   <form name="form" id="formcipher">
     <br>
     <h1>Projeto 1 - Caesar Cipher </h1>
     <h4>"Para criptografar ou descriptografar sua mensagem"</h4>
     <label>Selecione o número do deslocamento:</label>
-    <input type="number" id="displacement" placeholder="N° de posições"/>
-    <!-- Área para escrever a mensagem -->
-    <textarea id="writePhrase" placeholder="Escreva o texto / mensagem" ></textarea>
-    <input onclick="btnEncod()" type="text" id="botaoEncod" value= "CODIFICAR" />
-    <input onclick="btnDecod()" type="text" id="botaoDecod" value= "DECODIFICAR" />
-    <!-- Área para mostrar a mensagem -->
+    <input type="number" id="displacement" placeholder="N° de posições" />
+    <textarea id="write-phrase" placeholder="Escreva o texto / mensagem"></textarea>
+    <input type="button" id="btn-encode" value="CODIFICAR" />
+    <input type="button" id="btn-decode" value="DECODIFICAR" />
     <label>Resultado da mensagem processada:</label>
-    <textarea id="textResult" placeholder="Resultado" autocomplete="off" ></textarea>
-    <!-- Botão para limpar / recomeçar -->
-    <input type="reset" value ="LIMPAR" id="botaoClean" class="button"/>
+    <textarea id="text-result" placeholder="Resultado" autocomplete="off"></textarea>
+    <input type="reset" value="LIMPAR" id="btn-clean" class="button" />
   </form>
-<script src="cipher.js"></script>
-<script src="tests.js"></script> 
+  <script src="cipher.js"></script>
+  <script src="tests.js"></script>
 </body>
-
 </html>
